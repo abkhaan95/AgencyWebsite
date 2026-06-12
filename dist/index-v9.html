@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aetheris Studio | Variation 9 (Watercolor Fine Art)</title>
+  <meta name="description" content="Aetheris Studio is a premier creative design agency pushing the boundaries of animation, cinematic production, and brand identity using proprietary tools and advanced AI pipelines.">
+  <script type="module" crossorigin src="/assets/v9-BhjXEqND.js"></script>
+  <link rel="modulepreload" crossorigin href="/assets/modulepreload-polyfill-B5Qt9EMX.js">
+  <link rel="stylesheet" crossorigin href="/assets/v9-CH7tMvNO.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="scroll-progress-bar" id="scroll-progress"></div>
+
+  <!-- Background Glowing Orbs -->
+  <div class="bg-glow-container">
+    <div class="bg-glow-orb-1"></div>
+    <div class="bg-glow-orb-2"></div>
+    <div class="bg-glow-orb-3"></div>
+  </div>
+
+  <!-- HEADER / NAVIGATION -->
+  <header id="main-header" class="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo-area" id="nav-logo">
+        <div class="logo-icon-wrapper">
+          <svg class="logo-svg" viewBox="0 0 40 40">
+            <circle cx="20" cy="20" r="18" class="logo-circle-bg" />
+            <circle cx="20" cy="20" r="12" class="logo-circle-core" />
+            <path d="M20 2 L20 38 M2 20 L38 20" class="logo-axis" />
+          </svg>
+        </div>
+        <span class="logo-text">AETHERIS<span class="logo-subtext">STUDIO</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#process" class="nav-link">Our Process</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#portfolio" class="nav-link">Masterpieces</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-selector" id="lang-selector">
+          <span class="lang-option active">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-option">DE</span>
+        </div>
+        <a href="#contact" class="btn btn-secondary nav-cta" id="btn-envision">Envision Project</a>
+        <button class="mobile-nav-toggle" id="mobile-toggle" aria-label="Toggle Navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+    <!-- 1. HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="container hero-container">
+        <h1 class="hero-title reveal reveal-slide-up" id="hero-main-title" style="transition-delay: 0.1s;">
+          Where Cinematic Artistry<br>
+          <span class="text-gradient-accent">Meets Intelligent Code</span>
+        </h1>
+        <p class="hero-subtitle reveal reveal-slide-up" style="transition-delay: 0.25s;">
+          We are a next-generation creative collective crafting breathtaking animation, cinematic experiences, and avant-garde design. Fusing custom-coded creative pipelines with advanced machine intelligence to forge visual universes.
+        </p>
+        <div class="hero-actions-row reveal reveal-slide-up" style="transition-delay: 0.4s;">
+          <a href="#portfolio" class="btn btn-primary btn-lg" id="btn-hero-primary">Explore Our Universe</a>
+        </div>
+
+        <!-- Huge Interactive Showcase Banner -->
+        <div class="hero-banner-wrapper glass-panel float-slow reveal reveal-zoom" id="hero-banner-container" style="transition-delay: 0.55s;">
+          <div class="hero-banner-slides">
+            <div class="hero-slide active">
+              <img src="/assets/hero_banner-B9MSENL1.png" alt="Aetheris Studio Cinematic Banner" class="hero-banner-img" />
+              <div class="hero-slide-overlay">
+                <h3 class="hero-slide-title">Hyper-Visual Render Pipeline</h3>
+                <p class="hero-slide-desc">Synthesized in real-time using our custom deep learning visual upscaling neural tools.</p>
+              </div>
+            </div>
+            <div class="hero-slide">
+              <img src="/assets/portfolio_cinematic-CFI-YU_r.png" alt="Aetheris Studio Cinematic Landscape" class="hero-banner-img" />
+              <div class="hero-slide-overlay">
+                <h3 class="hero-slide-title">Atmospheric World Building</h3>
+                <p class="hero-slide-desc">Advanced matte painting, volumetric physics simulation, and real-time environment construction.</p>
+              </div>
+            </div>
+            <div class="hero-slide">
+              <img src="/assets/portfolio_ai_tools-B_44NkvP.png" alt="Aetheris Studio Proprietary Tools" class="hero-banner-img" />
+              <div class="hero-slide-overlay">
+                <h3 class="hero-slide-title">Proprietary Generative AI Engines</h3>
+                <p class="hero-slide-desc">In-house tailored diffusion architectures engineered for absolute creative control.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slider Arrow and Dot Indicators -->
+        <div class="slider-controls">
+          <button class="slider-arrow prev" id="slider-prev" aria-label="Previous Slide">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
+          </button>
+          <div class="slider-dots" id="slider-dots">
+            <span class="slider-dot active" data-index="0"></span>
+            <span class="slider-dot" data-index="1"></span>
+            <span class="slider-dot" data-index="2"></span>
+          </div>
+          <button class="slider-arrow next" id="slider-next" aria-label="Next Slide">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Glowing Line Separator -->
+    <div class="glow-divider"><span class="glow-node"></span></div>
+
+    <!-- 2. WORKFLOW PROCESS SECTION (3 STEPS) -->
+    <section id="process" class="process-section">
+      <div class="container">
+        <div class="text-center-wrapper">
+          <span class="section-label">Our Philosophy</span>
+          <h2 class="section-title text-gradient-primary">Crafting Excellence in Three Acts</h2>
+          <p class="section-subtitle">
+            A meticulous synergy of human intuition, cinematic legacy, and bespoke algorithmic automation guarantees extraordinary outputs.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <!-- Step 1 -->
+          <div class="process-card glass-panel reveal reveal-slide-up" id="process-card-1">
+            <div class="process-icon-box box-teal">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="process-svg">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"></path>
+                <path d="M12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                <line x1="12" y1="2" x2="12" y2="4"></line>
+                <line x1="12" y1="20" x2="12" y2="22"></line>
+                <line x1="2" y1="12" x2="4" y2="12"></line>
+                <line x1="20" y1="12" x2="22" y2="12"></line>
+              </svg>
+            </div>
+            <span class="process-step-num">Act I</span>
+            <h3 class="process-card-title">Concept & Algorithm</h3>
+            <p class="process-card-desc">
+              We define structural narratives, design system frameworks, and train customized spatial reference models specific to your visual language.
+            </p>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="process-card glass-panel reveal reveal-slide-up" id="process-card-2">
+            <div class="process-icon-box box-violet">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="process-svg">
+                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                <polyline points="2 17 12 22 22 17"></polyline>
+                <polyline points="2 12 12 17 22 12"></polyline>
+              </svg>
+            </div>
+            <span class="process-step-num">Act II</span>
+            <h3 class="process-card-title">Synthesize & Sculpt</h3>
+            <p class="process-card-desc">
+              Utilizing our proprietary digital pipeline software and high-density rendering servers, we model, light, and animate the entire universe.
+            </p>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="process-card glass-panel reveal reveal-slide-up" id="process-card-3">
+            <div class="process-icon-box box-crimson">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="process-svg">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polygon points="10 8 16 12 10 16 10 8"></polygon>
+              </svg>
+            </div>
+            <span class="process-step-num">Act III</span>
+            <h3 class="process-card-title">Refine & Deliver</h3>
+            <p class="process-card-desc">
+              Frames undergo frame-level mathematical upscaling, hand-tailored compositing, high-fidelity color-grading, and immersive cinematic spatial mixing.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MID-PAGE CTA BANNER -->
+    <section class="mid-cta-section glass-panel reveal reveal-zoom" id="mid-cta-banner">
+      <div class="mid-cta-glow-bg"></div>
+      <div class="container mid-cta-container">
+        <h2 class="mid-cta-title">Have an extraordinary vision?<br>Let's engineer it into reality.</h2>
+        <p class="mid-cta-desc">
+          Combine state-of-the-art computational workflows with raw design craft. Our team represents leaders in major feature films, algorithmic systems, and creative branding.
+        </p>
+        <a href="#contact" class="btn btn-glow-teal btn-lg" id="btn-mid-cta">Initiate Collaboration</a>
+      </div>
+    </section>
+
+    <!-- 4. SERVICES split layout SECTION -->
+    <section id="services" class="services-section">
+      <div class="container">
+        <div class="text-center-wrapper">
+          <span class="section-label">What We Do</span>
+          <h2 class="section-title text-gradient-secondary">An Intersection of Cinema, Code & Design</h2>
+          <p class="section-subtitle">
+            We operate at the nexus of classical artistry and next-generation code to offer specialized creative services.
+          </p>
+        </div>
+
+        <div class="services-split-grid">
+          <!-- Left Column Visual -->
+          <div class="services-visual-column glass-panel float-delayed reveal reveal-slide-left" id="services-visual-wrap">
+            <img src="/assets/services_visual-DchYenpd.png" alt="Aetheris Studio Creative Tools" class="services-visual-img" />
+            <div class="services-visual-overlay"></div>
+            <!-- Tech Stats floating element -->
+            <div class="services-floating-badge glass-panel">
+              <div class="badge-dot"></div>
+              <span>Custom Pipeline v2.4 Active</span>
+            </div>
+          </div>
+
+          <!-- Right Column Vertical Glow Tabs -->
+          <div class="services-tabs-column reveal reveal-slide-right" id="services-tabs-container">
+            <div class="services-tabs-intro">
+              <h3 class="services-tabs-heading">Our Specialized Capabilities</h3>
+              <p class="services-tabs-desc">Click each division below to learn how we utilize advanced customized engines to accelerate and elevate creative limits.</p>
+            </div>
+
+            <div class="services-tabs-list">
+              <!-- Tab 1 -->
+              <div class="services-tab-item active" data-service="animation">
+                <div class="tab-header">
+                  <div class="tab-glow-indicator"></div>
+                  <h4 class="tab-title">01. Cinematic & Animation</h4>
+                </div>
+                <div class="tab-body">
+                  <p class="tab-desc">
+                    High-end 3D CGI animation, organic character development, visual effects simulations (smoke, fluids, and cloth), and cinematic dynamic camera compositions engineered for maximum visual emotion.
+                  </p>
+                  <ul class="tab-features">
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Character Rigging & Animation</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Epic Cinematic Trailers</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Physics & Liquid Simulations</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Tab 2 -->
+              <div class="services-tab-item" data-service="design">
+                <div class="tab-header">
+                  <div class="tab-glow-indicator"></div>
+                  <h4 class="tab-title">02. Generative Brand Design</h4>
+                </div>
+                <div class="tab-body">
+                  <p class="tab-desc">
+                    Futuristic visual identity systems, modern typography structures, luxury industrial packaging, and dynamic digital layout systems optimized through neural rendering and custom graphic assets.
+                  </p>
+                  <ul class="tab-features">
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Avant-garde Typography</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Premium Packaging Mockups</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Design Token Frameworks</li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- Tab 3 -->
+              <div class="services-tab-item" data-service="ai-tools">
+                <div class="tab-header">
+                  <div class="tab-glow-indicator"></div>
+                  <h4 class="tab-title">03. Custom Computational Tools</h4>
+                </div>
+                <div class="tab-body">
+                  <p class="tab-desc">
+                    We code tailored internal tools, custom plug-ins, custom LoRA diffusion weights, and web-based interactive canvases that allow production departments to build cohesive visuals at hyper-speeds.
+                  </p>
+                  <ul class="tab-features">
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Fine-Tuned Custom LoRAs</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Bespoke Web Design Controls</li>
+                    <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="feat-check"><polyline points="20 6 9 17 4 12"></polyline></svg> Blender/Unreal Custom Add-ons</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Glowing Line Separator -->
+    <div class="glow-divider"><span class="glow-node"></span></div>
+
+    <!-- 5. PORTFOLIO & INSIGHTS SECTION -->
+    <section id="portfolio" class="portfolio-section">
+      <div class="container">
+        <div class="text-center-wrapper">
+          <span class="section-label">Our Lab Works</span>
+          <h2 class="section-title text-gradient-accent">Propelling Digital Frontiers</h2>
+          <p class="section-subtitle">
+            Explore our curated masterpieces across diverse visual fields. Filter by technology to understand the underlying pipeline.
+          </p>
+        </div>
+
+        <!-- Horizontal Filter Buttons -->
+        <div class="filter-wrapper" id="portfolio-filters">
+          <button class="filter-btn active" data-filter="all">All Masterpieces</button>
+          <button class="filter-btn" data-filter="animation">Animation</button>
+          <button class="filter-btn" data-filter="brand-design">Brand Design</button>
+          <button class="filter-btn" data-filter="cinematic">Cinematic</button>
+          <button class="filter-btn" data-filter="ai-tools">AI Tools</button>
+        </div>
+
+        <!-- Grid of Cards (Slidable) -->
+        <div class="portfolio-slider-container">
+          <div class="portfolio-grid" id="portfolio-grid">
+            <!-- Card 1 -->
+            <div class="portfolio-card glass-panel reveal reveal-slide-up" data-category="animation">
+              <div class="card-img-wrapper">
+                <img src="/assets/portfolio_animation-CbwQyF46.png" alt="Neo-Tokyo 2099 Animation" class="card-img" />
+                <span class="card-tag">Animation</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">NEO-TOKYO 2099</h3>
+                <p class="card-snippet">A visually-explosive sci-fi short film showcasing bioluminescent character designs and organic shader workflows.</p>
+                <div class="card-footer">
+                  <a href="#" class="card-link" id="link-tokyo">Explore Case Study <span class="arrow-svg">→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="portfolio-card glass-panel reveal reveal-slide-up" data-category="ai-tools">
+              <div class="card-img-wrapper">
+                <img src="/assets/portfolio_ai_tools-B_44NkvP.png" alt="Synapse Protocol Custom AI Tool" class="card-img" />
+                <span class="card-tag">AI Custom Tools</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">SYNAPSE PROTOCOL</h3>
+                <p class="card-snippet">Designing a custom real-time UI that interfaces with generative node models for instant high-end graphic asset composition.</p>
+                <div class="card-footer">
+                  <a href="#" class="card-link" id="link-synapse">Explore Case Study <span class="arrow-svg">→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="portfolio-card glass-panel reveal reveal-slide-up" data-category="cinematic">
+              <div class="card-img-wrapper">
+                <img src="/assets/portfolio_cinematic-CFI-YU_r.png" alt="Chronos Passage Cinematic Film" class="card-img" />
+                <span class="card-tag">Cinematic</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">CHRONOS PASSAGE</h3>
+                <p class="card-snippet">Widescreen spatial composition still from an upcoming immersive cinematic piece with detailed volumetric light rays.</p>
+                <div class="card-footer">
+                  <a href="#" class="card-link" id="link-chronos">Explore Case Study <span class="arrow-svg">→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="portfolio-card glass-panel reveal reveal-slide-up" data-category="brand-design">
+              <div class="card-img-wrapper">
+                <img src="/assets/portfolio_brand-CYDB49qj.png" alt="Aura Packaging Brand Identity" class="card-img" />
+                <span class="card-tag">Brand Design</span>
+              </div>
+              <div class="card-content">
+                <h3 class="card-title">AURA BRAND LAB</h3>
+                <p class="card-snippet">Premium brand identity and minimal bottle design for luxury fragrance, incorporating algorithmic dark gloss structures.</p>
+                <div class="card-footer">
+                  <a href="#" class="card-link" id="link-aura">Explore Case Study <span class="arrow-svg">→</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Glowing Line Separator -->
+    <div class="glow-divider"><span class="glow-node"></span></div>
+
+    <!-- 6. TESTIMONIALS SECTION -->
+    <section id="testimonials" class="testimonials-section">
+      <div class="container">
+        <div class="text-center-wrapper">
+          <span class="section-label">Visionary Backing</span>
+          <h2 class="section-title text-gradient-primary">What Visionaries Say About Us</h2>
+          <p class="section-subtitle">
+            We collaborate with industry giants, independent game directors, and cutting-edge startups to redefine media limits.
+          </p>
+        </div>
+
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-card glass-panel reveal reveal-slide-up">
+            <div class="testimonial-header">
+              <div class="avatar-wrapper ring-teal">
+                <svg viewBox="0 0 40 40" class="avatar-placeholder-svg">
+                  <circle cx="20" cy="20" r="20" fill="#11121a" />
+                  <path d="M20 10c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8zm0 18c6.6 0 12 4.4 12 10H8c0-5.6 5.4-10 12-10z" fill="var(--color-secondary)" />
+                </svg>
+              </div>
+              <div class="client-info">
+                <h4 class="client-name">Marcus Vance</h4>
+                <p class="client-title">Creative Director, CyberTech Films</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "Aetheris transformed our sci-fi pilot production. Their proprietary diffusion tools gave us consistency we couldn't get with commercial AI, blending flawlessly into our existing pipeline."
+            </p>
+            <div class="rating-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="testimonial-card glass-panel reveal reveal-slide-up">
+            <div class="testimonial-header">
+              <div class="avatar-wrapper ring-violet">
+                <svg viewBox="0 0 40 40" class="avatar-placeholder-svg">
+                  <circle cx="20" cy="20" r="20" fill="#11121a" />
+                  <path d="M20 10c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8zm0 18c6.6 0 12 4.4 12 10H8c0-5.6 5.4-10 12-10z" fill="var(--color-tertiary)" />
+                </svg>
+              </div>
+              <div class="client-info">
+                <h4 class="client-name">Aria Thorne</h4>
+                <p class="client-title">VP of Marketing, Elysium Inc.</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "Their generative brand system is a masterpiece. We received an entire responsive identity system and beautiful container visual layouts in a fraction of traditional agency timelines."
+            </p>
+            <div class="rating-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="testimonial-card glass-panel reveal reveal-slide-up">
+            <div class="testimonial-header">
+              <div class="avatar-wrapper ring-crimson">
+                <svg viewBox="0 0 40 40" class="avatar-placeholder-svg">
+                  <circle cx="20" cy="20" r="20" fill="#11121a" />
+                  <path d="M20 10c4.4 0 8 3.6 8 8s-3.6 8-8 8-8-3.6-8-8 3.6-8 8-8zm0 18c6.6 0 12 4.4 12 10H8c0-5.6 5.4-10 12-10z" fill="var(--color-primary)" />
+                </svg>
+              </div>
+              <div class="client-info">
+                <h4 class="client-name">Kaelen Croft</h4>
+                <p class="client-title">Lead Producer, Vanguard Games</p>
+              </div>
+            </div>
+            <p class="testimonial-quote">
+              "Working with Aetheris was an absolute revelation. Fusing spatial animation with neural-rendering pipelines saved weeks of manual work on VFX elements, giving us stunning 8K assets instantly."
+            </p>
+            <div class="rating-stars">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT / LEAD FORM -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-container glass-panel">
+        <div class="contact-glow"></div>
+        <div class="contact-grid">
+          <div class="contact-info-panel reveal reveal-slide-left">
+            <h2 class="contact-title text-gradient-accent">Let's Craft Something Transcendental</h2>
+            <p class="contact-desc">Ready to transcend traditional visual barriers? Fill out our brief inquiry, and our creative leads will get in touch with you within 24 hours.</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="method-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+                <span>visualize@aetheris.studio</span>
+              </div>
+              <div class="contact-method-item">
+                <div class="method-icon"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg></div>
+                <span>Offices in Los Angeles & Munich</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form reveal reveal-slide-right" id="contact-form" onsubmit="event.preventDefault(); alert('Inquiry successfully initialized! Welcome to Aetheris.');">
+            <div class="form-group">
+              <label for="client-name-input">Your Name</label>
+              <input type="text" id="client-name-input" class="form-input" placeholder="e.g. Elena Rostova" required>
+            </div>
+            <div class="form-group">
+              <label for="client-email-input">Your Email Address</label>
+              <input type="email" id="client-email-input" class="form-input" placeholder="e.g. elena@brand.com" required>
+            </div>
+            <div class="form-group">
+              <label for="project-type-select">Division of Interest</label>
+              <select id="project-type-select" class="form-input">
+                <option value="animation">Cinematic & Animation</option>
+                <option value="brand">Generative Brand Design</option>
+                <option value="custom-tools">Custom Pipeline Tools</option>
+                <option value="other">Full-Scale Hybrid Collaboration</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="client-message-input">Tell us about your project vision</label>
+              <textarea id="client-message-input" class="form-input text-area" placeholder="Describe the aesthetic, scope, and parameters of the vision..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100" id="btn-submit-form">Launch Partnership</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer-area">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <span class="footer-logo">AETHERIS<span class="logo-subtext">STUDIO</span></span>
+        <p class="footer-copy">&copy; 2026 Aetheris Studio. Pushing boundaries of motion & machine intelligence. All rights reserved.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="#" class="social-link" id="social-artstation" aria-label="ArtStation">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"></polygon></svg>
+        </a>
+        <a href="#" class="social-link" id="social-vimeo" aria-label="Vimeo">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 12a11 11 0 1 1-22 0 11 11 0 0 1 22 0z"></path><path d="M8 10c1 0 1.5 1.5 2 3s1 2.5 2 2.5 1-1.5 1-3-1-3-2-3c-.5 0-1 .5-1 1z"></path></svg>
+        </a>
+        <a href="#" class="social-link" id="social-github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
